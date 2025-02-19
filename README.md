@@ -32,7 +32,9 @@ from the documentation.
 To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/master/developer/howtos.html">the developer tutorials</a>
 
 ~~~shell
+# start the Odoo server
 python odoo-bin -c odoo.config --dev=xml
 
-python odoo-bin -c odoo.config --dev=xml -d rd-demo -u estate
+# Any modification of the Python files requires a restart of the Odoo server. When we restart the server, we will add the parameters -d and -u
+python odoo-bin -c odoo.config --dev=xml -u estate
 ~~~
